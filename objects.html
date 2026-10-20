@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objescts in Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+        body{
+            background-color: lightcyan;
+        }
+        p{
+        text-align: center;
+        }
+        .p1{
+            border: 2px solid;
+            border-radius: 15px;
+            background-color: white;
+        }
+     </style>
+
+
+</head>
+<body>
+    <div id="div1" class="jumbortron jumbotron-fluid bg-info" style="padding: 10px;">
+    
+    <h1 style="text-align:center; color: lightcoral; font-weight: 400;" > My information</h1>
+    </div>
+    <div class="p1" >
+<p id="det"> </p>
+<p id="country"></p>
+<p id="age"></p>
+<p id="class"></p>
+</div>
+
+    <script>
+    // Object//
+        var info = {
+            name : 'Agnes',
+            country : 'Nigeria',
+            age : '12 years',
+           class : 'JSS3',
+
+     }
+     // Dot notation//
+  document.getElementById('det'). innerHTML= info.name
+  document.getElementById('country'). innerHTML= info.country
+  // Bracket notation//
+  document.getElementById('age'). innerHTML= info['age']
+  document.getElementById('class'). innerHTML= info['class']
+
+
+    </script>
+</body>
+</html>
